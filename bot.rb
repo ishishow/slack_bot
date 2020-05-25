@@ -1,8 +1,7 @@
 require 'slack-ruby-client'
-require 'dotenv'
 
   Slack.configure do |conf|
-    Dotenv.load
+
     conf.token = ENV["SLACK_TOKEN"]
   end
 
